@@ -31,7 +31,7 @@ def remove_cc(text):
 
 def cmd(command):
     resp = DefaultFormatter.clean(rcon.command(command))
-    if resp == "":
+    if remove_cc(resp) == "":
         resp = "None"
     return resp
 
