@@ -49,15 +49,15 @@ async def w(ctx):
     if action == "add":
         action = "add"
         resp = cmd(f"whitelist add {nick}")
-        await ctx.reply(f"Игрок {nick} (Java) добавлен в вайтлист.\n```ansi\n{resp}```")
+        await ctx.reply(f"Игрок {nick} (Java) добавлен в вайтлист.\n\n```ansi\n{resp}```")
     elif action == "rm":
         action = "remove"
         resp = cmd(f"whitelist remove {nick}")
-        await ctx.reply(f"Игрок {nick} (Java) удалён из вайтлиста.\n```ansi\n{resp}```")
+        await ctx.reply(f"Игрок {nick} (Java) удалён из вайтлиста.\n\n```ansi\n{resp}```")
     elif action == "rl":
         action == "reload"
         resp = cmd(f"whitelist reload")
-        await ctx.reply(f"Вайтлист перезагружен.\n```ansi\n{resp}```")
+        await ctx.reply(f"Вайтлист перезагружен.\n\n```ansi\n{resp}```")
     else:
         await ctx.reply("Неверный синтаксис команды.")
 
@@ -71,15 +71,15 @@ async def fw(ctx):
     if action == "add":
         action = "add"
         resp = cmd(f"fwhitelist add {nick}")
-        await ctx.reply(f"Игрок {nick} (Bedrock) добавлен в вайтлист.\n```ansi\n{resp}```")
+        await ctx.reply(f"Игрок {nick} (Bedrock) добавлен в вайтлист.\n\n```ansi\n{resp}```")
     elif action == "rm":
         action == "remove"
         resp = cmd(f"fwhitelist remove {nick}")
-        await ctx.reply(f"Игрок {nick} (Bedrock) удалён из вайтлиста.\n```ansi\n{resp}```")
+        await ctx.reply(f"Игрок {nick} (Bedrock) удалён из вайтлиста.\n\n```ansi\n{resp}```")
     elif action == "rl":
         action == "reload"
         resp = cmd(f"whitelist reload")
-        await ctx.reply(f"Вайтлист перезагружен.\n```ansi\n{resp}```")
+        await ctx.reply(f"Вайтлист перезагружен.\n\n```ansi\n{resp}```")
     else:
         await ctx.reply("Неверный синтаксис команды.")
 
